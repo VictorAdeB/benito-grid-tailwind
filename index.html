@@ -16,15 +16,17 @@
     */
     .mosaic-grid {
       max-width: 1250px;
-      margin: 0 auto;
+      margin: auto;
       padding: 1rem;
       display: grid;
       grid-template-columns: 1fr;
       gap: 1rem;
       grid-auto-rows: auto;
+      /* position:absolute;
+        top:50%; */
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 868px) {
       /* change this value (220px) to make row height larger/smaller */
       .mosaic-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -44,7 +46,7 @@
     <div class="mosaic-grid">
   
       <!-- Card 1: row-start 1 span 2 -->
-      <div class="bg-yellow-200 md:w-[260px] h-[340px] row-span-2 col-start-1 rounded-xl p-4 flex flex-col justify-center">
+      <div class="bg-yellow-200 md:w-[260px] h-[320px] row-span-2 col-start-1 rounded-xl p-4 flex flex-col justify-center">
         <p class="pt-5">
           Create and
           schedule content <br />
@@ -71,8 +73,8 @@
       <!-- Card 4 -->
       <div class="bg-orange-400 text-white font-medium text-lg rounded-xl p-4 h-auto flex flex-col justify-between
                   md:col-start-3 md:row-start-2">
-        <h3>Maintaining a consistent<br/>posting schedule</h3>
-        <img style="height: 70% !important;" src="illustration-consistent-schedule.webp" alt="" />
+        <h3>Maintaining a consistent posting schedule</h3>
+        <img style="height: 60% !important;" src="illustration-consistent-schedule.webp" alt="" />
       </div>
   
       <!-- Card 5 (tall right column) -->
